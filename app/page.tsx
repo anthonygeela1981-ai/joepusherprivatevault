@@ -1,18 +1,23 @@
-export default function PPV() {
+export default function Home() {
   return (
-    <div style={{ backgroundColor: '#000', color: '#fff', minHeight: '100vh', padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-      <h1 style={{ fontSize: '2.5rem', color: '#dc2626', marginBottom: '2rem' }}>
-        PPV Videos – $12.99 Each
+    <div style={{ backgroundColor: '#000', color: '#fff', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem' }}>
+      <h1 style={{ fontSize: '4rem', color: '#dc2626', marginBottom: '1rem' }}>
+        JoePusherPrivateVault
       </h1>
-      <p style={{ marginBottom: '1rem' }}>
-        Buy access to exclusive 4K videos (crypto only)
+      <p style={{ fontSize: '1.5rem', marginBottom: '3rem' }}>
+        Exclusive 4K Videos & Photo Albums – Crypto Only
       </p>
-      <button style={{ backgroundColor: '#9333ea', color: '#fff', padding: '1rem 2rem', border: 'none', borderRadius: '0.5rem', cursor: 'pointer' }}>
-        Buy Now with Crypto
-      </button>
-      <a href="/" style={{ marginTop: '1rem', color: '#3b82f6', textDecoration: 'none' }}>
-        Back to Home
-      </a>
+      <div style={{ display: 'flex', gap: '2rem', flexWrap: 'wrap' }}>
+        <a href="/subscribe" style={{ backgroundColor: '#16a34a', color: 'white', padding: '1rem 2rem', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: 'bold' }}>
+          Subscribe $19.99/mo
+        </a>
+        <a href="/ppv" style={{ backgroundColor: '#9333ea', color: 'white', padding: '1rem 2rem', borderRadius: '0.5rem', textDecoration: 'none', fontWeight: 'bold' }}>
+          PPV Videos $12.99+
+        </a>
+        <a href="/admin" style={{ backgroundColor: '#3b82f6', color: 'white', padding: '1rem 2rem', borderRadius: '0.5rem', textDecoration: 'none' }}>
+          Admin Login
+        </a>
+      </div>
     </div>
-  );
+  )
 }
