@@ -14,20 +14,52 @@ export default function AdminLogin() {
   };
 
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center">
-      <div className="bg-gray-900 p-10 rounded-lg">
-        <h1 className="text-3xl text-red-600 mb-8 text-center">Admin Login</h1>
+    <div style={{ 
+      backgroundColor: '#000', 
+      color: '#fff', 
+      minHeight: '100vh', 
+      display: 'flex', 
+      alignItems: 'center', 
+      justifyContent: 'center' 
+    }}>
+      <div style={{ 
+        backgroundColor: '#111', 
+        padding: '3rem', 
+        borderRadius: '1rem', 
+        textAlign: 'center' 
+      }}>
+        <h1 style={{ fontSize: '2.5rem', color: '#dc2626', marginBottom: '2rem' }}>
+          Admin Login
+        </h1>
         <input
           type="password"
           placeholder="Password"
           value={pass}
           onChange={(e) => setPass(e.target.value)}
-          className="w-full p-3 bg-gray-800 rounded mb-4 text-white"
+          style={{ 
+            width: '100%', 
+            padding: '1rem', 
+            backgroundColor: '#222', 
+            color: '#fff', 
+            borderRadius: '0.5rem', 
+            marginBottom: '1rem', 
+            fontSize: '1.2rem' 
+          }}
         />
+        <br />
         <button
           onClick={login}
-          className="w-full bg-red-600 hover:bg-red-700 p-3 rounded text-white font-bold"
+          style={{ 
+            backgroundColor: '#dc2626', 
+            color: '#fff', 
+            padding: '1rem 2rem', 
+            border: 'none', 
+            borderRadius: '0.5rem', 
+            fontSize: '1.2rem', 
+            cursor: 'pointer' 
+          }}
         >
+          Login
           Login
         </button>
       </div>
