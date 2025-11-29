@@ -15,20 +15,18 @@ export default function AdminLogin() {
 
   return (
     <div style={{ backgroundColor: '#000', color: '#fff', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <div style={{ backgroundColor: '#111', padding: '3rem', borderRadius: '1rem', textAlign: 'center' }}>
-        <h1 style={{ fontSize: '2.5rem', color: '#dc2626', marginBottom: '2rem' }}>
-          Admin Login
-        </h1>
+      <div style={{ backgroundColor: '#111', padding: '3rem', borderRadius: '1rem' }}>
+        <h1 style={{ color: '#dc2626', marginBottom: '2rem', textAlign: 'center' }}>Admin Login</h1>
         <input
           type="password"
           placeholder="Password"
           value={pass}
           onChange={(e) => setPass(e.target.value)}
-          style={{ width: '100%', padding: '1rem', backgroundColor: '#222', color: '#fff', borderRadius: '0.5rem', marginBottom: '1rem', fontSize: '1.2rem' }}
+          style={{ width: '100%', padding: '1rem', backgroundColor: '#222', color: '#fff', borderRadius: '0.5rem', marginBottom: '1rem' }}
         />
         <button
           onClick={login}
-          style={{ backgroundColor: '#dc2626', color: '#fff', padding: '1rem 2rem', border: 'none', borderRadius: '0.5rem', fontSize: '1.2rem', cursor: 'pointer' }}
+          style={{ width: '100%', backgroundColor: '#dc2626', color: '#fff', padding: '1rem', border: 'none', borderRadius: '0.5rem', cursor: 'pointer' }}
         >
           Login
         </button>
