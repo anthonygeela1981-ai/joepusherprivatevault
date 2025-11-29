@@ -1,23 +1,18 @@
-export default function Home() {
+export default function PPV() {
   return (
-    <div style={{ backgroundColor: '#000', color: '#fff', minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '2rem', fontFamily: 'Arial, sans-serif' }}>
-      <h1 style={{ fontSize: '4rem', color: '#dc2626', marginBottom: '1rem', textAlign: 'center' }}>
-        JoePusherPrivateVault
+    <div style={{ backgroundColor: '#000', color: '#fff', minHeight: '100vh', padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+      <h1 style={{ fontSize: '2.5rem', color: '#dc2626', marginBottom: '2rem' }}>
+        PPV Videos – $12.99 Each
       </h1>
-      <p style={{ fontSize: '1.5rem', marginBottom: '2rem', textAlign: 'center', maxWidth: '600px' }}>
-        Exclusive 4K Videos & Photo Albums – Crypto Only
+      <p style={{ marginBottom: '1rem' }}>
+        Buy access to exclusive 4K videos (crypto only)
       </p>
-      <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center', marginBottom: '2rem' }}>
-        <a href="/subscribe" style={{ backgroundColor: '#16a34a', color: '#fff', padding: '1rem 2rem', textDecoration: 'none', borderRadius: '0.5rem', fontSize: '1.2rem', fontWeight: 'bold' }}>
-          Subscribe $19.99/mo
-        </a>
-        <a href="/ppv" style={{ backgroundColor: '#9333ea', color: '#fff', padding: '1rem 2rem', textDecoration: 'none', borderRadius: '0.5rem', fontSize: '1.2rem', fontWeight: 'bold' }}>
-          PPV Videos $12.99+
-        </a>
-      </div>
-      <a href="/admin" style={{ backgroundColor: '#3b82f6', color: '#fff', padding: '0.75rem 1.5rem', textDecoration: 'none', borderRadius: '0.5rem', fontSize: '1rem', fontWeight: 'bold' }}>
-        Admin Login
+      <button style={{ backgroundColor: '#9333ea', color: '#fff', padding: '1rem 2rem', border: 'none', borderRadius: '0.5rem', cursor: 'pointer' }}>
+        Buy Now with Crypto
+      </button>
+      <a href="/" style={{ marginTop: '1rem', color: '#3b82f6', textDecoration: 'none' }}>
+        Back to Home
       </a>
     </div>
-  )
+  );
 }
